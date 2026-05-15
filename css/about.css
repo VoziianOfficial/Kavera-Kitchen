@@ -669,6 +669,28 @@
     .about-model__item:nth-child(2) {
         border-bottom: 1px solid var(--color-border-light);
     }
+
+    .about-model__item {
+        min-height: 180px;
+        padding: 18px 56px 18px 18px;
+    }
+
+    .about-model__item::before {
+        top: 54px;
+        left: 18px;
+    }
+
+    .about-model__item span {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        margin-bottom: 0;
+        transform: none;
+    }
+
+    .about-model__item:hover span {
+        transform: none;
+    }
 }
 
 @media (max-width: 820px) {
@@ -707,6 +729,19 @@
         border-bottom: 0;
     }
 
+    .about-model__item {
+        padding-right: 52px;
+    }
+
+    .about-model__item span {
+        right: 20px;
+        top: 20px;
+    }
+
+    .about-model__item::before {
+        display: none;
+    }
+
     .about-story__image,
     .about-principles__image {
         min-height: 290px;
@@ -738,8 +773,17 @@
         padding: 20px;
     }
 
+    .about-model__item {
+        padding: 20px 52px 20px 20px;
+    }
+
+    .about-model__item span {
+        right: 20px;
+        top: 20px;
+    }
+
     .about-model__item::before {
-        left: 20px;
+        display: none;
     }
 }
 .about-hero .page-hero__bg img {
@@ -772,4 +816,117 @@
 
 .about-principles__image:hover img {
     transform: scale(1.025);
+}
+
+/* ==========================================================
+   ABOUT LIMITS — HOVER STATES
+========================================================== */
+
+.about-limits__column {
+    position: relative;
+    overflow: hidden;
+    transition:
+        background var(--ease),
+        border-color var(--ease),
+        transform var(--ease),
+        padding-left var(--ease),
+        padding-right var(--ease);
+}
+
+.about-limits__column::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-butter);
+    transition: width var(--ease);
+}
+
+.about-limits__column::after {
+    content: "";
+    position: absolute;
+    right: clamp(18px, 3vw, 32px);
+    bottom: clamp(18px, 3vw, 32px);
+    width: 54px;
+    height: 1px;
+    background: var(--color-sage);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition:
+        opacity var(--ease),
+        transform var(--ease),
+        width var(--ease);
+}
+
+.about-limits__column:hover {
+    background: rgba(255, 248, 234, 0.045);
+    border-color: rgba(255, 248, 234, 0.2);
+    transform: translateY(-2px);
+}
+
+.about-limits__column:hover::before {
+    width: 100%;
+}
+
+.about-limits__column:hover::after {
+    width: 82px;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.about-limits__column>span {
+    transition:
+        color var(--ease),
+        transform var(--ease);
+}
+
+.about-limits__column:hover>span {
+    color: var(--color-butter);
+    transform: translateX(3px);
+}
+
+.about-limits__column h3 {
+    transition: color var(--ease);
+}
+
+.about-limits__column:hover h3 {
+    color: var(--color-butter);
+}
+
+.about-limits__column li {
+    position: relative;
+    transition:
+        color var(--ease),
+        transform var(--ease);
+}
+
+.about-limits__column li::marker {
+    color: var(--color-sage);
+}
+
+.about-limits__column:hover li {
+    color: rgba(255, 248, 234, 0.88);
+}
+
+.about-limits__column:hover li:hover {
+    color: var(--color-heading-light);
+    transform: translateX(4px);
+}
+
+/* Slightly different accent for "does not" column */
+
+.about-limits__column--not::before {
+    background: var(--color-clay);
+}
+
+.about-limits__column--not:hover>span,
+.about-limits__column--not:hover h3 {
+    color: var(--color-clay);
+}
+
+.about-limits__column--not::after {
+    background: var(--color-butter);
 }
