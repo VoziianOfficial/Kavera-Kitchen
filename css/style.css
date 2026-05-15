@@ -2214,12 +2214,27 @@ p {
         padding: calc(var(--header-height) + 42px) 0 32px;
     }
 
+    .page-hero__content {
+        max-width: none;
+        text-align: center;
+    }
+
     .page-hero__content p {
         margin-top: 15px;
+        max-width: none;
+        margin-inline: auto;
     }
 
     .page-hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        width: 100%;
         margin-top: 21px;
+    }
+
+    .page-hero__badges {
+        justify-content: center;
     }
 
     .page-hero__actions .button,

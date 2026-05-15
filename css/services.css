@@ -947,17 +947,19 @@
     }
 
     .services-hero__content {
-        text-align: left;
+        text-align: center;
     }
 
     .services-hero__content h1 {
-        max-width: 340px;
+        max-width: none;
+        margin-inline: auto;
         font-size: clamp(2.15rem, 11vw, 3.1rem);
         line-height: 0.98;
     }
 
     .services-hero__content p {
-        max-width: 320px;
+        max-width: none;
+        margin-inline: auto;
         font-size: 0.9rem;
         line-height: 1.5;
     }
@@ -965,7 +967,8 @@
     .services-hero__content .page-hero__actions {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 320px;
+        width: 100%;
+        max-width: none;
     }
 
     .services-hero__content .button {
@@ -983,7 +986,7 @@
     .services-hero__rail a,
     .services-hero__rail a:nth-child(2) {
         min-height: 68px;
-        padding: 14px 0;
+        padding: 14px 52px 14px 0;
         border-right: 0;
         border-bottom: 1px solid rgba(255, 248, 234, 0.14);
         font-size: 1.15rem;
@@ -1001,6 +1004,12 @@
     .services-hero__rail a:hover {
         padding-left: 0;
         background: transparent;
+    }
+
+    .services-hero__rail a span {
+        position: absolute;
+        right: 0;
+        top: 14px;
     }
 }
 
