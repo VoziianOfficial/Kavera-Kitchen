@@ -1,16 +1,6 @@
-/* ==========================================================
-   Kavera — About Page
-   Premium compact about:
-   - editorial story
-   - clean square slideshow
-   - aggregator-safe model
-   - does / does not split
-   - principles with lines
-========================================================== */
 
-/* ==========================================================
-   1. ABOUT HERO
-========================================================== */
+
+
 
 .about-hero {
     min-height: clamp(500px, 64vh, 700px);
@@ -47,9 +37,7 @@
     font-size: 0.9rem;
 }
 
-/* ==========================================================
-   2. STORY
-========================================================== */
+
 
 .about-story {
     overflow: hidden;
@@ -160,9 +148,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================
-   3. SLIDESHOW
-========================================================== */
+
 
 .about-slideshow {
     overflow: hidden;
@@ -323,9 +309,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================
-   4. AGGREGATOR MODEL
-========================================================== */
+
 
 .about-model {
     overflow: hidden;
@@ -409,9 +393,7 @@
     line-height: 1.55;
 }
 
-/* ==========================================================
-   5. DOES / DOES NOT
-========================================================== */
+
 
 .about-limits {
     overflow: hidden;
@@ -496,9 +478,7 @@
     background: var(--color-clay);
 }
 
-/* ==========================================================
-   6. PRINCIPLES
-========================================================== */
+
 
 .about-principles {
     overflow: hidden;
@@ -621,9 +601,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================
-   7. CTA
-========================================================== */
+
 
 .about-cta .compact-cta__media {
     min-height: 300px;
@@ -635,9 +613,7 @@
         linear-gradient(180deg, transparent, rgba(23, 25, 26, 0.42));
 }
 
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 
 @media (max-width: 1120px) {
 
@@ -790,9 +766,7 @@
     object-position: center 30%;
 }
 
-/* ==========================================================
-   ABOUT PRINCIPLES — FIX IMAGE CARD SIZE
-========================================================== */
+
 
 .about-principles__image {
     position: relative;
@@ -818,9 +792,7 @@
     transform: scale(1.025);
 }
 
-/* ==========================================================
-   ABOUT LIMITS — HOVER STATES
-========================================================== */
+
 
 .about-limits__column {
     position: relative;
@@ -916,7 +888,7 @@
     transform: translateX(4px);
 }
 
-/* Slightly different accent for "does not" column */
+
 
 .about-limits__column--not::before {
     background: var(--color-clay);

@@ -1,11 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   Kavera — Legal Pages
-   Handles:
-   - active sidebar section state
-   - smooth legal anchor behavior is handled globally in main.js
-========================================================== */
+
 
 (function () {
     document.addEventListener("DOMContentLoaded", initLegalPage);

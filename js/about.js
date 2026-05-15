@@ -1,10 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   Kavera — About Page
-   Handles:
-   - Editorial slideshow
-========================================================== */
+
 
 (function () {
     const slides = [

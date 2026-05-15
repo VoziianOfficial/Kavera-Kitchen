@@ -1,11 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   Kavera — Service Pages
-   Handles:
-   - Provider comparison score-line animation
-   - Shared behavior for all 4 service pages
-========================================================== */
+
 
 (function () {
     document.addEventListener("DOMContentLoaded", initServicePage);

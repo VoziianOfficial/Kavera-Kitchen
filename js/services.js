@@ -1,10 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   Kavera — Services Page
-   Handles:
-   - Kitchen style switcher
-========================================================== */
+
 
 (function () {
     const config = window.SITE_CONFIG;

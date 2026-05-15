@@ -1,13 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   Kavera — Contact Page
-   Handles:
-   - the only form on the entire website
-   - 4 required fields only
-   - no real sending
-   - no page reload
-========================================================== */
+
 
 (function () {
     const config = window.SITE_CONFIG;

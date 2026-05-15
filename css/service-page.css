@@ -1,18 +1,6 @@
-/* ==========================================================
-   Kavera — Individual Service Pages
-   Shared structure:
-   1. Service hero
-   2. Scope split
-   3. Detail checklist
-   4. Material / finish board
-   5. Provider fit score
-   6. FAQ
-   7. Compact CTA
-========================================================== */
 
-/* ==========================================================
-   1. SERVICE HERO
-========================================================== */
+
+
 
 .service-hero {
     min-height: clamp(500px, 64vh, 700px);
@@ -106,9 +94,7 @@
     transform: translateX(2px);
 }
 
-/* ==========================================================
-   2. SCOPE SPLIT
-========================================================== */
+
 
 .service-scope {
     overflow: hidden;
@@ -236,9 +222,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================
-   3. DETAIL CHECKLIST
-========================================================== */
+
 
 .service-checklist {
     overflow: hidden;
@@ -338,9 +322,7 @@
     line-height: 1.55;
 }
 
-/* ==========================================================
-   4. MATERIAL / FINISH BOARD
-========================================================== */
+
 
 .service-materials {
     overflow: hidden;
@@ -461,9 +443,7 @@
     grid-column: 1 / -1;
 }
 
-/* ==========================================================
-   5. PROVIDER FIT SCORE
-========================================================== */
+
 
 .service-compare {
     overflow: hidden;
@@ -534,9 +514,7 @@
     line-height: 1.5;
 }
 
-/* ==========================================================
-   6. FAQ
-========================================================== */
+
 
 .service-faq {
     overflow: hidden;
@@ -562,9 +540,7 @@
     margin-top: 24px;
 }
 
-/* ==========================================================
-   7. CTA
-========================================================== */
+
 
 .service-cta .compact-cta__media {
     min-height: 300px;
@@ -576,9 +552,7 @@
         linear-gradient(180deg, transparent, rgba(23, 25, 26, 0.42));
 }
 
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 
 @media (max-width: 1120px) {
 
@@ -699,9 +673,7 @@
     }
 }
 
-/* ==========================================================
-   SERVICE CHECKLIST — COMPACT VERSION
-========================================================== */
+
 
 .service-checklist-v2 {
     overflow: hidden;
@@ -844,7 +816,7 @@
     line-height: 1.52;
 }
 
-/* Tablet */
+
 
 @media (max-width: 1024px) {
     .service-checklist-v2__head {
@@ -875,7 +847,7 @@
     }
 }
 
-/* Mobile */
+
 
 @media (max-width: 700px) {
     .service-checklist-v2__head {
@@ -984,9 +956,7 @@
     }
 }
 
-/* ==========================================================
-   SERVICE MATERIAL BOARD — TABLET / MOBILE COMPACT SAME SIZE
-========================================================== */
+
 
 @media (max-width: 1024px) {
     .service-materials__grid {

@@ -45,9 +45,7 @@
     document.documentElement.classList.add("site-ready");
   }
 
-  /* ==========================================================
-     PAGE / META
-  ========================================================== */
+  
 
   function getCurrentPage() {
     const path = window.location.pathname;
@@ -89,9 +87,7 @@
     document.body.insertBefore(skip, document.body.firstChild);
   }
 
-  /* ==========================================================
-     HEADER
-  ========================================================== */
+  
 
   function renderHeader() {
     const mount = document.querySelector("[data-site-header]");
@@ -263,9 +259,7 @@
     });
   }
 
-  /* ==========================================================
-     MOBILE MENU
-  ========================================================== */
+  
 
   function renderMobileMenu() {
     if (document.getElementById("mobileMenu")) return;

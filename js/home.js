@@ -1,11 +1,6 @@
 "use strict";
 
-/* ==========================================================
-   Kavera — Home Page
-   Handles:
-   - Match choice active states
-   - Comparison score line animation
-========================================================== */
+
 
 (function () {
     document.addEventListener("DOMContentLoaded", initHomePage);

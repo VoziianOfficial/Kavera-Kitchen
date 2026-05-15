@@ -1,16 +1,6 @@
-/* ==========================================================
-   Kavera — Home Page
-   New direction:
-   - compact premium rhythm
-   - fewer heavy cards
-   - large editorial imagery
-   - sharp geometry
-   - line-based details
-========================================================== */
 
-/* ==========================================================
-   1. HOME HERO
-========================================================== */
+
+
 
 .home-hero {
     min-height: clamp(520px, 68vh, 760px);
@@ -135,9 +125,7 @@
     color: var(--color-butter);
 }
 
-/* ==========================================================
-   3. MATCH SECTION
-========================================================== */
+
 
 .home-match {
     overflow: hidden;
@@ -316,9 +304,7 @@
     transform: scaleX(1);
 }
 
-/* ==========================================================
-   4. MATERIAL BOARD
-========================================================== */
+
 
 .home-materials {
     overflow: hidden;
@@ -447,9 +433,7 @@
     grid-column: 1 / -1;
 }
 
-/* ==========================================================
-   5. PROCESS
-========================================================== */
+
 
 .home-process {
     overflow: hidden;
@@ -490,9 +474,7 @@
     font-size: 0.9rem;
 }
 
-/* ==========================================================
-   6. COMPARE / FIT SCORE
-========================================================== */
+
 
 .home-compare {
     overflow: hidden;
@@ -563,9 +545,7 @@
     line-height: 1.5;
 }
 
-/* ==========================================================
-   7. SOCIAL PROOF STRIPS
-========================================================== */
+
 
 .home-proof {
     margin-top: clamp(32px, 5vw, 58px);
@@ -634,9 +614,7 @@
     font-size: 0.92rem;
 }
 
-/* ==========================================================
-   8. CTA MOSAIC
-========================================================== */
+
 
 .home-cta .compact-cta__media {
     display: grid;
@@ -708,9 +686,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================
-   DECOR
-========================================================== */
+
 
 .home-line-art--right {
     top: 64px;
@@ -722,9 +698,7 @@
     bottom: 54px;
 }
 
-/* ==========================================================
-   RESPONSIVE
-========================================================== */
+
 
 @media (max-width: 1120px) {
 
@@ -858,9 +832,7 @@
     }
 }
 
-/* ==========================================================
-   2. SERVICES OVERVIEW
-========================================================== */
+
 
 .home-services {
     overflow: hidden;
@@ -1129,9 +1101,7 @@
     transform: translateY(-2px);
 }
 
-/* ==========================================================
-   3. PROVIDER FIT RAIL
-========================================================== */
+
 
 .home-match-rail {
     position: relative;
@@ -1305,9 +1275,7 @@
     margin-top: clamp(24px, 4vw, 36px);
 }
 
-/* ==========================================================
-   4. MATERIAL DIRECTION
-========================================================== */
+
 
 .home-materials {
     overflow: hidden;
@@ -1461,9 +1429,7 @@
     line-height: 1.55;
 }
 
-/* ==========================================================
-   HOME TRUST / PROVIDER NOTES — FINAL CLEAN VERSION
-========================================================== */
+
 
 .home-trust {
     overflow: hidden;
@@ -1618,7 +1584,7 @@
     width: 100%;
 }
 
-/* keep comments elegant and connected to this section */
+
 
 .home-trust .home-proof {
     margin-top: clamp(24px, 4vw, 40px);
@@ -1672,7 +1638,7 @@
     }
 }
 
-/* Hover for review / proof rows */
+
 
 .home-proof__row {
     position: relative;
@@ -1745,7 +1711,7 @@
     color: rgba(255, 248, 234, 0.92);
 }
 
-/* Fix CTA mosaic image sizing */
+
 
 .home-cta .compact-cta__media {
     display: grid;
@@ -1805,9 +1771,7 @@
         grid-row: auto;
     }
 }
-/* ==========================================================
-   HOME SERVICES — MOBILE PHOTO SLIDER
-========================================================== */
+
 
 .home-services__slider-track {
     display: grid;
@@ -2037,9 +2001,7 @@
     }
 }
 
-/* ==========================================================
-   PROVIDER FIT RAIL — MOBILE CLEAN COMPACT LIST
-========================================================== */
+
 
 @media (max-width: 700px) {
     .home-match-rail {
@@ -2216,9 +2178,7 @@
     }
 }
 
-/* ==========================================================
-   MATERIAL DIRECTION — MOBILE CENTERED STACK
-========================================================== */
+
 
 @media (max-width: 700px) {
     .home-materials {
@@ -2347,12 +2307,10 @@
     }
 }
 
-/* ==========================================================
-   TABLET / MOBILE — NUMBERS TOP RIGHT + COMPACT CARDS
-========================================================== */
+
 
 @media (max-width: 1024px) {
-    /* ---------- PROVIDER NOTES ---------- */
+    
 
     .home-trust__item {
         position: relative;
@@ -2394,7 +2352,7 @@
         padding-right: 58px;
     }
 
-    /* ---------- PROCESS SECTION ---------- */
+    
 
     .process-rail {
         gap: 10px;
@@ -2433,7 +2391,7 @@
 }
 
 @media (max-width: 700px) {
-    /* ---------- PROVIDER NOTES MOBILE ---------- */
+    
 
     .home-trust__rail {
         gap: 8px;
@@ -2472,7 +2430,7 @@
         background: transparent;
     }
 
-    /* ---------- PROCESS MOBILE ---------- */
+    
 
     .process-rail {
         display: grid;
@@ -2521,9 +2479,7 @@
     }
 }
 
-/* ==========================================================
-   PROCESS — TABLET / MOBILE COMPACT CARDS
-========================================================== */
+
 
 @media (max-width: 1024px) {
     .home-process__top {
