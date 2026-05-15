@@ -2036,3 +2036,632 @@
         pointer-events: none;
     }
 }
+
+/* ==========================================================
+   PROVIDER FIT RAIL — MOBILE CLEAN COMPACT LIST
+========================================================== */
+
+@media (max-width: 700px) {
+    .home-match-rail {
+        padding: 42px 0;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .home-match-rail::before {
+        display: none;
+    }
+
+    .home-match-rail__bg::after {
+        background:
+            linear-gradient(180deg,
+                rgba(23, 25, 26, 0.82),
+                rgba(23, 25, 26, 0.72),
+                rgba(23, 25, 26, 0.9));
+    }
+
+    .home-match-rail .container {
+        min-height: auto;
+        display: block;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .home-match-rail__header {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        max-width: 360px;
+        margin: 0 auto 24px;
+        text-align: center;
+    }
+
+    .home-match-rail__header .eyebrow {
+        grid-column: auto;
+        justify-self: center;
+        color: var(--color-butter);
+    }
+
+    .home-match-rail__header h2 {
+        max-width: 340px;
+        margin-inline: auto;
+        color: var(--color-heading-light);
+        font-size: clamp(1.8rem, 9vw, 2.45rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+
+    .home-match-rail__header p {
+        max-width: 330px;
+        margin-inline: auto;
+        color: rgba(255, 248, 234, 0.74);
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .home-match-rail__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        max-width: 390px;
+        margin-inline: auto;
+        border: 0;
+    }
+
+    .home-match-rail__item {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        gap: 12px;
+        align-items: center;
+        min-height: 58px;
+        padding: 10px 12px;
+        background: rgba(255, 248, 234, 0.07);
+        border: 1px solid rgba(255, 248, 234, 0.13);
+        backdrop-filter: blur(8px);
+    }
+
+    .home-match-rail__item::before,
+    .home-match-rail__item::after {
+        display: none;
+    }
+
+    .home-match-rail__item span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        margin: 0;
+        color: var(--color-heading-dark);
+        background: var(--color-butter);
+        border-radius: 999px;
+        font-size: 0.68rem;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0;
+        transition:
+            background var(--ease),
+            transform var(--ease);
+    }
+
+    .home-match-rail__item h3 {
+        color: var(--color-heading-light);
+        font-size: 0.98rem;
+        line-height: 1.12;
+        letter-spacing: -0.025em;
+    }
+
+    .home-match-rail__item p {
+        display: none;
+    }
+
+    .home-match-rail__item:hover {
+        background: rgba(147, 174, 114, 0.13);
+        border-color: rgba(243, 200, 91, 0.28);
+    }
+
+    .home-match-rail__item:hover span {
+        background: var(--color-sage);
+        transform: translateY(-1px);
+    }
+
+    .home-match-rail__item:hover h3 {
+        color: var(--color-butter);
+    }
+
+    .home-match-rail__bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        max-width: 390px;
+        margin: 18px auto 0;
+    }
+
+    .home-match-rail__bottom .button {
+        width: 100%;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 430px) {
+    .home-match-rail {
+        padding: 36px 0;
+    }
+
+    .home-match-rail__header {
+        max-width: 320px;
+        margin-bottom: 20px;
+    }
+
+    .home-match-rail__header h2 {
+        max-width: 300px;
+    }
+
+    .home-match-rail__header p {
+        max-width: 300px;
+    }
+
+    .home-match-rail__item {
+        min-height: 54px;
+        padding: 9px 10px;
+    }
+
+    .home-match-rail__item span {
+        width: 32px;
+        height: 32px;
+    }
+
+    .home-match-rail__item h3 {
+        font-size: 0.94rem;
+    }
+}
+
+/* ==========================================================
+   MATERIAL DIRECTION — MOBILE CENTERED STACK
+========================================================== */
+
+@media (max-width: 700px) {
+    .home-materials {
+        text-align: center;
+    }
+
+    .home-materials__header {
+        margin-bottom: 24px;
+    }
+
+    .home-materials__header .eyebrow {
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .home-materials__heading {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        max-width: 340px;
+        margin: 12px auto 0;
+        text-align: center;
+    }
+
+    .home-materials__heading h2 {
+        max-width: 330px;
+        margin-inline: auto;
+        font-size: clamp(1.8rem, 9vw, 2.45rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+
+    .home-materials__heading p {
+        max-width: 320px;
+        margin-inline: auto;
+        color: rgba(255, 248, 234, 0.74);
+        font-size: 0.88rem;
+        line-height: 1.5;
+    }
+
+    .home-materials__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        max-width: 390px;
+        margin-inline: auto;
+    }
+
+    .home-material-card {
+        min-height: 360px;
+    }
+
+    .home-material-card__content {
+        display: grid;
+        align-content: end;
+        justify-items: center;
+        min-height: 360px;
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .home-material-card__content span {
+        margin: 0 auto 42px;
+    }
+
+    .home-material-card__content h3 {
+        max-width: 300px;
+        margin-inline: auto;
+        font-size: clamp(1.45rem, 7.5vw, 2.1rem);
+        line-height: 1.04;
+    }
+
+    .home-material-card__content p {
+        max-width: 300px;
+        margin: 10px auto 0;
+        font-size: 0.86rem;
+        line-height: 1.48;
+    }
+
+    .home-material-card__content .text-link {
+        margin-top: 16px;
+    }
+
+    .home-materials__bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        max-width: 340px;
+        margin: 18px auto 0;
+        padding-top: 16px;
+        text-align: center;
+    }
+
+    .home-materials__bottom span {
+        margin-inline: auto;
+    }
+
+    .home-materials__bottom p {
+        max-width: 320px;
+        margin-inline: auto;
+        font-size: 0.82rem;
+        line-height: 1.48;
+    }
+}
+
+@media (max-width: 430px) {
+    .home-material-card {
+        min-height: 320px;
+    }
+
+    .home-material-card__content {
+        min-height: 320px;
+        padding: 22px 18px;
+    }
+
+    .home-material-card__content span {
+        margin-bottom: 34px;
+    }
+
+    .home-material-card__content h3 {
+        max-width: 280px;
+    }
+
+    .home-material-card__content p {
+        max-width: 280px;
+    }
+}
+
+/* ==========================================================
+   TABLET / MOBILE — NUMBERS TOP RIGHT + COMPACT CARDS
+========================================================== */
+
+@media (max-width: 1024px) {
+    /* ---------- PROVIDER NOTES ---------- */
+
+    .home-trust__item {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+        min-height: auto;
+        padding: 18px 58px 18px 0;
+    }
+
+    .home-trust__item>span {
+        position: absolute;
+        top: 16px;
+        right: 0;
+        width: 36px;
+        height: 36px;
+        margin: 0;
+    }
+
+    .home-trust__item h3 {
+        max-width: calc(100% - 8px);
+        font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+    }
+
+    .home-trust__item p {
+        max-width: 100%;
+        margin-top: 5px;
+        font-size: 0.84rem;
+        line-height: 1.42;
+    }
+
+    .home-trust__item a {
+        width: fit-content;
+        margin-top: 4px;
+    }
+
+    .home-trust__item:hover {
+        padding-left: 0;
+        padding-right: 58px;
+    }
+
+    /* ---------- PROCESS SECTION ---------- */
+
+    .process-rail {
+        gap: 10px;
+    }
+
+    .process-step {
+        position: relative;
+        min-height: auto;
+        padding: 18px 58px 18px 18px;
+    }
+
+    .process-step__number {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 36px;
+        height: 36px;
+        margin: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+    }
+
+    .process-step h3 {
+        max-width: calc(100% - 10px);
+        font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+        line-height: 1.1;
+    }
+
+    .process-step p {
+        margin-top: 7px;
+        font-size: 0.84rem;
+        line-height: 1.42;
+    }
+}
+
+@media (max-width: 700px) {
+    /* ---------- PROVIDER NOTES MOBILE ---------- */
+
+    .home-trust__rail {
+        gap: 8px;
+        border-bottom: 0;
+    }
+
+    .home-trust__item {
+        padding: 15px 54px 15px 0;
+        border-top: 1px solid rgba(255, 248, 234, 0.12);
+    }
+
+    .home-trust__item>span {
+        top: 14px;
+        right: 0;
+        width: 32px;
+        height: 32px;
+        font-size: 0.68rem;
+    }
+
+    .home-trust__item h3 {
+        font-size: 1.02rem;
+    }
+
+    .home-trust__item p {
+        font-size: 0.8rem;
+        line-height: 1.38;
+    }
+
+    .home-trust__item a {
+        font-size: 0.7rem;
+    }
+
+    .home-trust__item:hover {
+        padding-left: 0;
+        padding-right: 54px;
+        background: transparent;
+    }
+
+    /* ---------- PROCESS MOBILE ---------- */
+
+    .process-rail {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .process-step {
+        padding: 15px 54px 15px 14px;
+        min-height: 104px;
+    }
+
+    .process-step__number {
+        top: 14px;
+        right: 14px;
+        width: 32px;
+        height: 32px;
+        font-size: 0.68rem;
+    }
+
+    .process-step h3 {
+        font-size: 1.02rem;
+    }
+
+    .process-step p {
+        font-size: 0.8rem;
+        line-height: 1.38;
+    }
+}
+
+@media (max-width: 430px) {
+    .home-trust__item {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .process-step {
+        min-height: 96px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .home-trust__item p,
+    .process-step p {
+        font-size: 0.78rem;
+    }
+}
+
+/* ==========================================================
+   PROCESS — TABLET / MOBILE COMPACT CARDS
+========================================================== */
+
+@media (max-width: 1024px) {
+    .home-process__top {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        margin-bottom: 26px;
+    }
+
+    .home-process__top h2 {
+        max-width: 720px;
+    }
+
+    .home-process__top p {
+        max-width: 720px;
+        font-size: 0.92rem;
+        line-height: 1.5;
+    }
+
+    .home-process .process-rail {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .home-process .process-step {
+        position: relative;
+        min-height: 128px;
+        padding: 18px 58px 18px 18px;
+    }
+
+    .home-process .process-step__number {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        margin: 0;
+        line-height: 1;
+    }
+
+    .home-process .process-step h3 {
+        max-width: 100%;
+        font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+        line-height: 1.1;
+    }
+
+    .home-process .process-step p {
+        margin-top: 7px;
+        font-size: 0.84rem;
+        line-height: 1.42;
+    }
+}
+
+@media (max-width: 700px) {
+    .home-process__top {
+        text-align: center;
+        margin-bottom: 22px;
+    }
+
+    .home-process__top .eyebrow {
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .home-process__top h2 {
+        max-width: 330px;
+        margin-inline: auto;
+        font-size: clamp(1.8rem, 9vw, 2.45rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+
+    .home-process__top p {
+        max-width: 320px;
+        margin-inline: auto;
+        font-size: 0.88rem;
+        line-height: 1.48;
+    }
+
+    .home-process .process-rail {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .home-process .process-step {
+        min-height: 96px;
+        padding: 14px 54px 14px 14px;
+    }
+
+    .home-process .process-step__number {
+        top: 14px;
+        right: 14px;
+        width: 32px;
+        height: 32px;
+        font-size: 0.68rem;
+    }
+
+    .home-process .process-step h3 {
+        font-size: 1rem;
+        line-height: 1.1;
+    }
+
+    .home-process .process-step p {
+        font-size: 0.78rem;
+        line-height: 1.36;
+    }
+
+    .home-process__bottom {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .home-process__bottom p {
+        max-width: 320px;
+        margin-inline: auto;
+        font-size: 0.82rem;
+        line-height: 1.45;
+    }
+
+    .home-process__bottom .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .home-process .process-step {
+        min-height: 88px;
+        padding: 13px 52px 13px 13px;
+    }
+
+    .home-process .process-step__number {
+        top: 13px;
+        right: 13px;
+        width: 30px;
+        height: 30px;
+    }
+}
