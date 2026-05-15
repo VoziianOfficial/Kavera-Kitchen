@@ -1128,3 +1128,179 @@
     background: var(--color-butter);
     transform: translateY(-2px);
 }
+
+/* ==========================================================
+   3. PROVIDER FIT RAIL
+========================================================== */
+
+.home-match-rail {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(56px, 7vw, 92px) 0;
+    color: var(--color-heading-light);
+    background: var(--color-bg);
+}
+
+.home-match-rail__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.home-match-rail__bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-match-rail__bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(23, 25, 26, 0.9), rgba(23, 25, 26, 0.62), rgba(23, 25, 26, 0.86)),
+        linear-gradient(180deg, rgba(23, 25, 26, 0.5), rgba(23, 25, 26, 0.82));
+}
+
+.home-match-rail .container {
+    position: relative;
+    z-index: 2;
+}
+
+.home-match-rail__header {
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(280px, 0.42fr);
+    gap: clamp(24px, 5vw, 72px);
+    align-items: end;
+    margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.home-match-rail__header .eyebrow {
+    grid-column: 1 / -1;
+}
+
+.home-match-rail__header h2 {
+    max-width: 790px;
+    color: var(--color-heading-light);
+}
+
+.home-match-rail__header p {
+    max-width: 520px;
+    color: rgba(255, 248, 234, 0.74);
+    font-size: 0.96rem;
+}
+
+.home-match-rail__list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    border-top: 1px solid rgba(255, 248, 234, 0.18);
+    border-bottom: 1px solid rgba(255, 248, 234, 0.18);
+}
+
+.home-match-rail__item {
+    position: relative;
+    min-height: 230px;
+    padding: clamp(20px, 2.6vw, 30px);
+    border-right: 1px solid rgba(255, 248, 234, 0.14);
+    background: rgba(255, 248, 234, 0.035);
+    transition:
+        background var(--ease),
+        transform var(--ease);
+}
+
+.home-match-rail__item:last-child {
+    border-right: 0;
+}
+
+.home-match-rail__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: clamp(20px, 2.6vw, 30px);
+    right: clamp(20px, 2.6vw, 30px);
+    height: 2px;
+    background: var(--color-butter);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform var(--ease);
+}
+
+.home-match-rail__item::after {
+    content: "";
+    position: absolute;
+    left: clamp(20px, 2.6vw, 30px);
+    bottom: clamp(20px, 2.6vw, 30px);
+    width: 44px;
+    height: 1px;
+    background: var(--color-sage);
+    opacity: 0.65;
+    transition:
+        width var(--ease),
+        background var(--ease),
+        opacity var(--ease);
+}
+
+.home-match-rail__item span {
+    display: inline-flex;
+    width: fit-content;
+    margin-bottom: clamp(36px, 4vw, 54px);
+    color: var(--color-butter);
+    font-size: 0.74rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    transition:
+        color var(--ease),
+        transform var(--ease);
+}
+
+.home-match-rail__item h3 {
+    color: var(--color-heading-light);
+    font-size: clamp(1.08rem, 1.45vw, 1.42rem);
+    transition: color var(--ease);
+}
+
+.home-match-rail__item p {
+    margin-top: 9px;
+    color: rgba(255, 248, 234, 0.7);
+    font-size: 0.86rem;
+    line-height: 1.5;
+    transition:
+        color var(--ease),
+        opacity var(--ease);
+}
+
+.home-match-rail__item:hover {
+    background: rgba(147, 174, 114, 0.14);
+}
+
+.home-match-rail__item:hover::before {
+    transform: scaleX(1);
+}
+
+.home-match-rail__item:hover::after {
+    width: 72px;
+    background: var(--color-butter);
+    opacity: 1;
+}
+
+.home-match-rail__item:hover span {
+    color: var(--color-sage);
+    transform: translateX(3px);
+}
+
+.home-match-rail__item:hover h3 {
+    color: var(--color-butter);
+}
+
+.home-match-rail__item:hover p {
+    color: rgba(255, 248, 234, 0.86);
+}
+
+.home-match-rail__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: clamp(24px, 4vw, 36px);
+}
