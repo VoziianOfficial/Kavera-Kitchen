@@ -1,0 +1,700 @@
+/* ==========================================================
+   Kavera — Individual Service Pages
+   Shared structure:
+   1. Service hero
+   2. Scope split
+   3. Detail checklist
+   4. Material / finish board
+   5. Provider fit score
+   6. FAQ
+   7. Compact CTA
+========================================================== */
+
+/* ==========================================================
+   1. SERVICE HERO
+========================================================== */
+
+.service-hero {
+    min-height: clamp(500px, 64vh, 700px);
+}
+
+.service-hero .page-hero__inner {
+    grid-template-columns: minmax(0, 0.86fr) minmax(280px, 0.42fr);
+}
+
+.service-hero__panel {
+    display: grid;
+    gap: 16px;
+}
+
+.service-hero__panel strong {
+    display: block;
+    max-width: 330px;
+    color: var(--color-heading-light);
+    font-family: var(--font-heading);
+    font-size: clamp(1.3rem, 2vw, 1.92rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.service-hero__panel p {
+    color: rgba(255, 248, 234, 0.72);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.service-hero__quick {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid rgba(255, 248, 234, 0.13);
+}
+
+.service-hero__quick a {
+    position: relative;
+    display: grid;
+    grid-template-columns: 24px minmax(0, 1fr);
+    gap: 11px;
+    align-items: center;
+    min-height: 43px;
+    border-bottom: 1px solid rgba(255, 248, 234, 0.1);
+    color: rgba(255, 248, 234, 0.78);
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition:
+        color var(--ease),
+        padding-left var(--ease);
+}
+
+.service-hero__quick a::after {
+    content: "";
+    position: absolute;
+    left: 35px;
+    right: 0;
+    bottom: -1px;
+    height: 1px;
+    background: var(--color-butter);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform var(--ease);
+}
+
+.service-hero__quick svg {
+    width: 18px;
+    height: 18px;
+    color: var(--color-sage);
+    stroke-width: 1.7;
+    transition:
+        color var(--ease),
+        transform var(--ease);
+}
+
+.service-hero__quick span {
+    transition: color var(--ease);
+}
+
+.service-hero__quick a:hover {
+    color: var(--color-butter);
+}
+
+.service-hero__quick a:hover::after {
+    transform: scaleX(1);
+}
+
+.service-hero__quick a:hover svg {
+    color: var(--color-butter);
+    transform: translateX(2px);
+}
+
+/* ==========================================================
+   2. SCOPE SPLIT
+========================================================== */
+
+.service-scope {
+    overflow: hidden;
+}
+
+.service-scope__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.52fr) minmax(340px, 0.82fr);
+    gap: clamp(32px, 7vw, 96px);
+    align-items: center;
+}
+
+.service-scope__grid--reverse {
+    grid-template-columns: minmax(340px, 0.82fr) minmax(0, 0.52fr);
+}
+
+.service-scope__content {
+    max-width: 620px;
+}
+
+.service-scope__content p {
+    margin-top: 16px;
+    color: var(--color-text-dark);
+}
+
+.service-scope__rows {
+    display: grid;
+    gap: 0;
+    margin-top: clamp(24px, 4vw, 36px);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.service-scope__row {
+    display: grid;
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 12px;
+    align-items: start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.service-scope__row span {
+    width: fit-content;
+    color: var(--color-clay);
+    font-size: 0.74rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+    transition:
+        color var(--ease),
+        transform var(--ease);
+}
+
+.service-scope__row:hover span {
+    color: var(--color-sage-dark);
+    transform: translateX(3px);
+}
+
+.service-scope__row p {
+    margin: 0;
+    color: var(--color-text-dark);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.service-scope__image {
+    position: relative;
+    min-height: clamp(360px, 48vw, 620px);
+    overflow: hidden;
+    background: var(--color-bg-soft);
+    box-shadow: var(--shadow-photo);
+    clip-path: polygon(7% 0, 100% 0, 93% 100%, 0 100%);
+}
+
+.service-scope__grid--reverse .service-scope__image {
+    clip-path: polygon(0 0, 93% 0, 100% 100%, 7% 100%);
+}
+
+.service-scope__image img {
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    transition:
+        transform 700ms ease,
+        filter 700ms ease;
+}
+
+.service-scope__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, transparent 34%, rgba(23, 25, 26, 0.62)),
+        linear-gradient(90deg, rgba(23, 25, 26, 0.2), transparent);
+}
+
+.service-scope__image:hover img {
+    transform: scale(1.025);
+    filter: saturate(1.05);
+}
+
+.service-scope__image span {
+    position: absolute;
+    left: clamp(24px, 5vw, 48px);
+    bottom: 18px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    min-height: 32px;
+    padding: 0 10px;
+    color: var(--color-heading-dark);
+    background: var(--color-butter);
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition:
+        color var(--ease),
+        background var(--ease),
+        transform var(--ease);
+}
+
+.service-scope__image span:hover {
+    color: var(--color-heading-light);
+    background: var(--color-sage-dark);
+    transform: translateY(-2px);
+}
+
+/* ==========================================================
+   3. DETAIL CHECKLIST
+========================================================== */
+
+.service-checklist {
+    overflow: hidden;
+}
+
+.service-checklist__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.92fr);
+    gap: clamp(32px, 7vw, 92px);
+    align-items: start;
+}
+
+.service-checklist__intro {
+    position: sticky;
+    top: calc(var(--header-height) + 28px);
+    max-width: 560px;
+}
+
+.service-checklist__intro p {
+    margin-top: 16px;
+    color: rgba(255, 248, 234, 0.74);
+}
+
+.service-checklist__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    margin-top: 24px;
+    color: var(--color-heading-dark);
+    background: var(--color-sage);
+    border-radius: 999px;
+    transition:
+        background var(--ease),
+        transform var(--ease);
+}
+
+.service-checklist__icon svg {
+    width: 28px;
+    height: 28px;
+    stroke-width: 1.6;
+}
+
+.service-checklist__icon:hover {
+    background: var(--color-butter);
+    transform: translateY(-2px);
+}
+
+.service-checklist__rows {
+    display: grid;
+    gap: 0;
+    border-top: 1px solid rgba(255, 248, 234, 0.12);
+}
+
+.service-checklist__row {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 16px;
+    align-items: start;
+    padding: clamp(16px, 3vw, 22px) 0;
+    border-bottom: 1px solid rgba(255, 248, 234, 0.1);
+}
+
+.service-checklist__row span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    color: var(--color-heading-dark);
+    background: var(--color-sage);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    transition:
+        background var(--ease),
+        transform var(--ease);
+}
+
+.service-checklist__row:hover span {
+    background: var(--color-butter);
+    transform: translateY(-2px);
+}
+
+.service-checklist__row h3 {
+    color: var(--color-heading-light);
+    font-size: clamp(1.08rem, 1.55vw, 1.42rem);
+}
+
+.service-checklist__row p {
+    max-width: 760px;
+    margin-top: 6px;
+    color: rgba(255, 248, 234, 0.74);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+/* ==========================================================
+   4. MATERIAL / FINISH BOARD
+========================================================== */
+
+.service-materials {
+    overflow: hidden;
+}
+
+.service-materials__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.48fr) minmax(360px, 0.82fr);
+    gap: clamp(32px, 7vw, 96px);
+    align-items: center;
+}
+
+.service-materials__content {
+    max-width: 620px;
+}
+
+.service-materials__content p {
+    margin-top: 16px;
+    color: var(--color-text-dark);
+}
+
+.service-materials__note {
+    margin-top: clamp(24px, 4vw, 36px);
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border-light);
+}
+
+.service-materials__note span {
+    display: inline-flex;
+    width: fit-content;
+    margin-bottom: 8px;
+    color: var(--color-clay);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    transition: color var(--ease);
+}
+
+.service-materials__note span:hover {
+    color: var(--color-sage-dark);
+}
+
+.service-materials__note p {
+    margin: 0;
+    color: var(--color-text-dark);
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.service-material-board {
+    display: grid;
+    grid-template-columns: 1.1fr 0.78fr;
+    grid-template-rows: 210px 160px 110px;
+    gap: 12px;
+    min-height: 500px;
+}
+
+.service-material-piece {
+    position: relative;
+    overflow: hidden;
+    background: var(--color-bg-soft);
+    box-shadow: var(--shadow-photo);
+}
+
+.service-material-piece img {
+    width: 100%;
+    height: 100%;
+    transition:
+        transform 700ms ease,
+        filter 700ms ease;
+}
+
+.service-material-piece::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(180deg, transparent 34%, rgba(23, 25, 26, 0.65)),
+        linear-gradient(90deg, rgba(23, 25, 26, 0.16), transparent);
+}
+
+.service-material-piece span {
+    position: absolute;
+    left: 14px;
+    bottom: 14px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    padding: 0 9px;
+    color: var(--color-heading-dark);
+    background: var(--color-cream);
+    font-size: 0.68rem;
+    font-weight: 900;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    transition:
+        background var(--ease),
+        transform var(--ease);
+}
+
+.service-material-piece:hover img {
+    transform: scale(1.03);
+    filter: saturate(1.05);
+}
+
+.service-material-piece:hover span {
+    background: var(--color-butter);
+    transform: translateY(-2px);
+}
+
+.service-material-piece--large {
+    grid-row: span 2;
+}
+
+.service-material-piece--wide {
+    grid-column: 1 / -1;
+}
+
+/* ==========================================================
+   5. PROVIDER FIT SCORE
+========================================================== */
+
+.service-compare {
+    overflow: hidden;
+}
+
+.service-compare__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.48fr) minmax(360px, 0.82fr);
+    gap: clamp(32px, 7vw, 96px);
+    align-items: start;
+}
+
+.service-compare__content {
+    max-width: 580px;
+}
+
+.service-compare__content p {
+    margin-top: 16px;
+    color: rgba(255, 248, 234, 0.74);
+}
+
+.service-compare__content .badge-row {
+    margin-top: 24px;
+}
+
+.service-compare__head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    align-items: end;
+    padding-bottom: 16px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgba(255, 248, 234, 0.11);
+}
+
+.service-compare__head span {
+    display: inline-flex;
+    width: fit-content;
+    color: var(--color-sage);
+    font-size: 0.72rem;
+    font-weight: 900;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    transition: color var(--ease);
+}
+
+.service-compare__head span:hover {
+    color: var(--color-butter);
+}
+
+.service-compare__head strong {
+    display: block;
+    margin-top: 6px;
+    color: var(--color-heading-light);
+    font-family: var(--font-heading);
+    font-size: clamp(1.34rem, 2vw, 2rem);
+    font-weight: 500;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.service-compare__note {
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 248, 234, 0.1);
+    color: var(--color-muted);
+    font-size: 0.84rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================
+   6. FAQ
+========================================================== */
+
+.service-faq {
+    overflow: hidden;
+}
+
+.service-faq__grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.88fr);
+    gap: clamp(32px, 7vw, 90px);
+    align-items: start;
+}
+
+.service-faq__intro {
+    max-width: 560px;
+}
+
+.service-faq__intro p {
+    margin-top: 16px;
+    color: var(--color-text-dark);
+}
+
+.service-faq__intro .button {
+    margin-top: 24px;
+}
+
+/* ==========================================================
+   7. CTA
+========================================================== */
+
+.service-cta .compact-cta__media {
+    min-height: 300px;
+}
+
+.service-cta .compact-cta__media::after {
+    background:
+        linear-gradient(90deg, rgba(23, 25, 26, 0.72), rgba(23, 25, 26, 0.08)),
+        linear-gradient(180deg, transparent, rgba(23, 25, 26, 0.42));
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 1120px) {
+
+    .service-hero .page-hero__inner,
+    .service-scope__grid,
+    .service-scope__grid--reverse,
+    .service-checklist__grid,
+    .service-materials__grid,
+    .service-compare__grid,
+    .service-faq__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-scope__grid--reverse .service-scope__image {
+        order: -1;
+    }
+
+    .service-checklist__intro {
+        position: static;
+        max-width: 760px;
+    }
+
+    .service-materials__content,
+    .service-compare__content,
+    .service-faq__intro {
+        max-width: 760px;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .service-scope__image,
+    .service-scope__grid--reverse .service-scope__image {
+        min-height: 320px;
+        clip-path: none;
+    }
+
+    .service-material-board {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 190px 150px 110px;
+        min-height: auto;
+    }
+
+    .service-checklist__row {
+        grid-template-columns: 46px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .service-checklist__row span {
+        width: 34px;
+        height: 34px;
+    }
+
+    .service-compare__head {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 680px) {
+    .service-hero__quick a {
+        grid-template-columns: 22px minmax(0, 1fr);
+    }
+
+    .service-hero__quick a::after {
+        left: 33px;
+    }
+
+    .service-scope__image {
+        min-height: 290px;
+    }
+
+    .service-scope__row,
+    .service-checklist__row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .service-material-board {
+        grid-template-columns: 1fr;
+        grid-template-rows: none;
+    }
+
+    .service-material-piece,
+    .service-material-piece--large,
+    .service-material-piece--wide {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 190px;
+    }
+
+    .service-material-piece--large {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 430px) {
+    .service-scope__image {
+        min-height: 260px;
+    }
+
+    .service-material-piece,
+    .service-material-piece--wide {
+        min-height: 180px;
+    }
+
+    .service-material-piece--large {
+        min-height: 250px;
+    }
+
+    .service-checklist__icon {
+        width: 56px;
+        height: 56px;
+    }
+
+    .service-checklist__icon svg {
+        width: 25px;
+        height: 25px;
+    }
+}
