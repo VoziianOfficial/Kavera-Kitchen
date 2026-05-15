@@ -328,6 +328,11 @@ window.SITE_CONFIG = {
 	                question: "Do I need to share my full project details right away?",
 	                answer:
 	                    "No. Start with the service category and basic contact info. More detailed scope, measurements, materials, timeline, and quote questions should be confirmed directly with independent providers during estimate conversations."
+	            },
+	            {
+	                question: "Can I submit more than one request?",
+	                answer:
+	                    "Yes. If you want to compare multiple categories (for example cabinets and countertops), you can submit separate requests so each provider conversation stays easier to compare."
 	            }
 	        ],
 

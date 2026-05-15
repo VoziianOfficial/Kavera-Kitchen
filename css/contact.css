@@ -606,8 +606,10 @@
     }
 
     .contact-option {
+        position: relative;
         grid-template-columns: 1fr;
-        gap: 8px;
+        gap: 6px;
+        padding: 12px 52px 12px 0;
     }
 
     .contact-option__label,
@@ -618,6 +620,9 @@
     }
 
     .contact-option__icon {
+        position: absolute;
+        top: 12px;
+        right: 0;
         width: 36px;
         height: 36px;
     }
