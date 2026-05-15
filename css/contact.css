@@ -652,3 +652,91 @@
         font-size: 1rem;
     }
 }
+/* ==========================================================
+   CONTACT MATCH — ROW HOVERS
+========================================================== */
+
+.contact-match__row {
+    position: relative;
+    overflow: hidden;
+    transition:
+        background var(--ease),
+        padding-left var(--ease),
+        padding-right var(--ease);
+}
+
+.contact-match__row::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -1px;
+    width: 0;
+    height: 1px;
+    background: var(--color-butter);
+    transition: width var(--ease);
+}
+
+.contact-match__row::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 1px;
+    background: var(--color-sage);
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition:
+        opacity var(--ease),
+        transform var(--ease),
+        width var(--ease);
+}
+
+.contact-match__row:hover {
+    background: rgba(147, 174, 114, 0.08);
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.contact-match__row:hover::before {
+    width: 100%;
+}
+
+.contact-match__row:hover::after {
+    width: 82px;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.contact-match__row>span {
+    transition:
+        background var(--ease),
+        color var(--ease),
+        transform var(--ease);
+}
+
+.contact-match__row:hover>span {
+    color: var(--color-heading-dark);
+    background: var(--color-butter);
+    transform: translateY(-2px);
+}
+
+.contact-match__row h3 {
+    transition: color var(--ease);
+}
+
+.contact-match__row:hover h3 {
+    color: var(--color-sage-dark);
+}
+
+.contact-match__row p {
+    transition:
+        color var(--ease),
+        opacity var(--ease);
+}
+
+.contact-match__row:hover p {
+    color: var(--color-text-dark);
+    opacity: 0.88;
+}

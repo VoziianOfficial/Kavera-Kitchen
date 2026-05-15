@@ -261,8 +261,8 @@ window.SITE_CONFIG = {
         ]
     },
 
-    faq: {
-        general: [
+	    faq: {
+	        general: [
             {
                 question: "How does Kavera help me compare kitchen remodeling providers?",
                 answer:
@@ -283,7 +283,7 @@ window.SITE_CONFIG = {
                 answer:
                     "Provider availability can vary by ZIP code, city, project type, and schedule. Confirm service area directly with each independent provider."
             }
-        ],
+	        ],
 
 	        services: [
 	            {
@@ -308,23 +308,28 @@ window.SITE_CONFIG = {
 	            }
 	        ],
 
-        contact: [
-            {
-                question: "What happens after I submit the request form?",
-                answer:
-                    "Your request helps identify the service category you want to compare. Submitting the form does not hire a contractor or create a project agreement."
-            },
-            {
-                question: "Why does the form only ask for four fields?",
-                answer:
-                    "The form is intentionally compact. More detailed project questions should be discussed directly with independent providers during estimate conversations."
-            },
-            {
-                question: "Does Kavera operate its own remodeling crew?",
-                answer:
-                    "No. Kavera is not a kitchen remodeling contractor and does not operate remodeling crews."
-            }
-        ],
+	        contact: [
+	            {
+	                question: "What happens after I submit the request form?",
+	                answer:
+	                    "Your request helps identify the service category you want to compare. Submitting the form does not hire a contractor or create a project agreement."
+	            },
+	            {
+	                question: "Why does the form only ask for four fields?",
+	                answer:
+	                    "The form is intentionally compact. More detailed project questions should be discussed directly with independent providers during estimate conversations."
+	            },
+	            {
+	                question: "Does Kavera operate its own remodeling crew?",
+	                answer:
+	                    "No. Kavera is not a kitchen remodeling contractor and does not operate remodeling crews."
+	            },
+	            {
+	                question: "Do I need to share my full project details right away?",
+	                answer:
+	                    "No. Start with the service category and basic contact info. More detailed scope, measurements, materials, timeline, and quote questions should be confirmed directly with independent providers during estimate conversations."
+	            }
+	        ],
 
         "full-kitchen-remodeling": [
             {
