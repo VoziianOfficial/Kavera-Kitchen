@@ -984,3 +984,113 @@
     }
 }
 
+/* ==========================================================
+   SERVICE MATERIAL BOARD — TABLET / MOBILE COMPACT SAME SIZE
+========================================================== */
+
+@media (max-width: 1024px) {
+    .service-materials__grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .service-material-board {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: none;
+        gap: 10px;
+        min-height: 0;
+    }
+
+    .service-material-piece,
+    .service-material-piece--large,
+    .service-material-piece--wide {
+        grid-column: auto;
+        grid-row: auto;
+        width: 100%;
+        height: 220px;
+        min-height: 220px;
+        max-height: 220px;
+    }
+
+    .service-material-piece img,
+    .service-material-piece--large img,
+    .service-material-piece--wide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .service-materials__content {
+        text-align: center;
+    }
+
+    .service-materials__content .eyebrow {
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .service-materials__content h2 {
+        max-width: 330px;
+        margin-inline: auto;
+        font-size: clamp(1.8rem, 9vw, 2.45rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+    }
+
+    .service-materials__content>p {
+        max-width: 320px;
+        margin-inline: auto;
+        font-size: 0.88rem;
+        line-height: 1.48;
+    }
+
+    .service-materials__note {
+        max-width: 330px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .service-materials__note span {
+        margin-inline: auto;
+    }
+
+    .service-material-board {
+        grid-template-columns: 1fr;
+        gap: 9px;
+        max-width: 390px;
+        margin-inline: auto;
+    }
+
+    .service-material-piece,
+    .service-material-piece--large,
+    .service-material-piece--wide {
+        height: 190px;
+        min-height: 190px;
+        max-height: 190px;
+    }
+
+    .service-material-piece span {
+        left: 12px;
+        bottom: 12px;
+        min-height: 28px;
+        padding: 0 9px;
+        font-size: 0.66rem;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .service-material-piece,
+    .service-material-piece--large,
+    .service-material-piece--wide {
+        height: 170px;
+        min-height: 170px;
+        max-height: 170px;
+    }
+}
