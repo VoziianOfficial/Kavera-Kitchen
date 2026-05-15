@@ -2400,3 +2400,47 @@ p {
     color: var(--color-butter);
     transform: translateX(1px);
 }
+
+.site-footer__brand {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    padding: clamp(22px, 3vw, 34px);
+    background: var(--color-bg-soft);
+}
+
+.site-footer__brand::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(23, 25, 26, 0.74),
+            rgba(23, 25, 26, 0.42),
+            rgba(23, 25, 26, 0.78)),
+        url("../assets/images/detail-lighting.jpg") center / cover no-repeat;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.site-footer__brand::after {
+    content: "";
+    position: absolute;
+    right: -60px;
+    top: -40px;
+    z-index: 0;
+    width: 260px;
+    height: 180px;
+    background: radial-gradient(circle,
+            rgba(243, 200, 91, 0.26),
+            rgba(147, 174, 114, 0.12) 42%,
+            transparent 72%);
+    filter: blur(18px);
+    pointer-events: none;
+}
+
+.site-footer__brand>* {
+    position: relative;
+    z-index: 1;
+}
