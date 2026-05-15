@@ -285,23 +285,28 @@ window.SITE_CONFIG = {
             }
         ],
 
-        services: [
-            {
-                question: "Can I compare providers for only one kitchen update?",
-                answer:
-                    "Yes. Kavera organizes provider options by service category, including cabinets, countertops, backsplash and fixtures, or broader kitchen remodeling scopes."
-            },
-            {
-                question: "Does Kavera recommend one specific provider?",
-                answer:
-                    "Kavera helps homeowners review provider options. The final decision should be based on direct conversations, estimates, license and insurance verification, warranties, and project fit."
-            },
-            {
-                question: "What can affect kitchen remodeling project scope?",
-                answer:
-                    "Materials, layout changes, cabinet condition, measurements, plumbing or electrical needs, access, location, and provider availability may affect scope and timing."
-            }
-        ],
+	        services: [
+	            {
+	                question: "Can I compare providers for only one kitchen update?",
+	                answer:
+	                    "Yes. Kavera organizes provider options by service category, including cabinets, countertops, backsplash and fixtures, or broader kitchen remodeling scopes."
+	            },
+	            {
+	                question: "Does Kavera recommend one specific provider?",
+	                answer:
+	                    "Kavera helps homeowners review provider options. The final decision should be based on direct conversations, estimates, license and insurance verification, warranties, and project fit."
+	            },
+	            {
+	                question: "What can affect kitchen remodeling project scope?",
+	                answer:
+	                    "Materials, layout changes, cabinet condition, measurements, plumbing or electrical needs, access, location, and provider availability may affect scope and timing."
+	            },
+	            {
+	                question: "How do I choose the right service category?",
+	                answer:
+	                    "Start with the category that matches the biggest part of your kitchen scope (full remodel, cabinets, countertops, or tile and fixtures). Providers can confirm details during estimates, but separating categories helps keep comparisons clearer."
+	            }
+	        ],
 
         contact: [
             {
