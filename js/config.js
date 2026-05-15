@@ -336,77 +336,117 @@ window.SITE_CONFIG = {
 	            }
 	        ],
 
-        "full-kitchen-remodeling": [
-            {
-                question: "What should I compare for a full kitchen remodel?",
-                answer:
-                    "Compare layout planning, cabinet scope, surface materials, lighting, fixture details, timeline expectations, estimate detail, and warranty discussions."
-            },
-            {
-                question: "Does Kavera manage full kitchen remodel projects?",
-                answer:
-                    "No. Kavera does not manage or perform remodeling projects. Homeowners communicate directly with independent providers about scope, scheduling, estimates, and terms."
-            },
-            {
-                question: "Can one provider handle every part of a larger kitchen scope?",
-                answer:
-                    "Provider capabilities vary. Ask each provider which parts of the project they handle, which parts may require separate trades, and how coordination is addressed."
-            }
-        ],
+	        "full-kitchen-remodeling": [
+	            {
+	                question: "What should I compare for a full kitchen remodel?",
+	                answer:
+	                    "Compare layout planning, cabinet scope, surface materials, lighting, fixture details, timeline expectations, estimate detail, and warranty discussions."
+	            },
+	            {
+	                question: "Does Kavera manage full kitchen remodel projects?",
+	                answer:
+	                    "No. Kavera does not manage or perform remodeling projects. Homeowners communicate directly with independent providers about scope, scheduling, estimates, and terms."
+	            },
+	            {
+	                question: "Can one provider handle every part of a larger kitchen scope?",
+	                answer:
+	                    "Provider capabilities vary. Ask each provider which parts of the project they handle, which parts may require separate trades, and how coordination is addressed."
+	            },
+	            {
+	                question: "What should I ask about timeline and site access?",
+	                answer:
+	                    "Ask when the project can start, how long each phase takes, who will be on site, working hours, how the kitchen is protected, and what typically causes schedule delays."
+	            },
+	            {
+	                question: "Should I get multiple estimates for a full kitchen remodel?",
+	                answer:
+	                    "Usually yes. Compare scope line items, allowances, change order policies, payment schedule, warranty terms, and confirm licensing and insurance directly with each independent provider."
+	            }
+	        ],
 
-        "kitchen-cabinet-upgrades": [
-            {
-                question: "Should I compare cabinet replacement and refacing separately?",
-                answer:
-                    "Yes. Replacement and refacing can involve different materials, timelines, costs, and provider capabilities."
-            },
-            {
-                question: "What cabinet details should I ask about?",
-                answer:
-                    "Ask about door style, finish, storage inserts, hardware, measurement process, cabinet construction, timeline, and warranty terms."
-            },
-            {
-                question: "Does Kavera install cabinets?",
-                answer:
-                    "No. Kavera helps homeowners compare independent cabinet upgrade provider options and does not install or replace cabinets directly."
-            }
-        ],
+	        "kitchen-cabinet-upgrades": [
+	            {
+	                question: "Should I compare cabinet replacement and refacing separately?",
+	                answer:
+	                    "Yes. Replacement and refacing can involve different materials, timelines, costs, and provider capabilities."
+	            },
+	            {
+	                question: "What cabinet details should I ask about?",
+	                answer:
+	                    "Ask about door style, finish, storage inserts, hardware, measurement process, cabinet construction, timeline, and warranty terms."
+	            },
+	            {
+	                question: "Does Kavera install cabinets?",
+	                answer:
+	                    "No. Kavera helps homeowners compare independent cabinet upgrade provider options and does not install or replace cabinets directly."
+	            },
+	            {
+	                question: "How long do cabinet upgrades typically take?",
+	                answer:
+	                    "Timelines vary by material lead times, measurements, and installation schedule. Ask about fabrication lead time, demo, installation days, and how countertops, plumbing, and hardware timing are coordinated."
+	            },
+	            {
+	                question: "What should I ask about cabinet materials and construction?",
+	                answer:
+	                    "Ask about box material (plywood vs particleboard), joinery, drawer slides, soft-close hardware, finish type, moisture resistance, and what is covered under warranty."
+	            }
+	        ],
 
-        "countertops-surfaces": [
-            {
-                question: "What should I ask countertop providers?",
-                answer:
-                    "Ask about material options, edge profiles, seams, sink cutouts, measurement process, removal, installation timing, warranties, and quote detail."
-            },
-            {
-                question: "Can countertop scope affect the rest of the kitchen?",
-                answer:
-                    "Yes. Countertop planning may connect to sinks, backsplash height, cabinets, plumbing fixtures, and timing with other kitchen updates."
-            },
-            {
-                question: "Does Kavera install countertops?",
-                answer:
-                    "No. Kavera does not install countertops or perform direct remodeling work."
-            }
-        ],
+	        "countertops-surfaces": [
+	            {
+	                question: "What should I ask countertop providers?",
+	                answer:
+	                    "Ask about material options, edge profiles, seams, sink cutouts, measurement process, removal, installation timing, warranties, and quote detail."
+	            },
+	            {
+	                question: "Can countertop scope affect the rest of the kitchen?",
+	                answer:
+	                    "Yes. Countertop planning may connect to sinks, backsplash height, cabinets, plumbing fixtures, and timing with other kitchen updates."
+	            },
+	            {
+	                question: "Does Kavera install countertops?",
+	                answer:
+	                    "No. Kavera does not install countertops or perform direct remodeling work."
+	            },
+	            {
+	                question: "When should templating and measurements happen?",
+	                answer:
+	                    "Often after cabinet installation and final layout decisions. Ask providers when they template, what they need on site, and how they handle sink/faucet cutouts and backsplash height planning."
+	            },
+	            {
+	                question: "What affects seams, edges, and overhang details?",
+	                answer:
+	                    "Material type, slab size, layout, sink choice, and support requirements can affect seams and overhangs. Ask how seams are planned, edge profiles, reinforcement, and what maintenance is recommended."
+	            }
+	        ],
 
-        "backsplash-tile-fixtures": [
-            {
-                question: "What should I compare for backsplash and fixture updates?",
-                answer:
-                    "Compare tile material, pattern, grout, surface prep, faucet compatibility, hardware finish, lighting details, quote clarity, and timing."
-            },
-            {
-                question: "Can backsplash and fixtures be a smaller project?",
-                answer:
-                    "Often yes, but scope depends on existing surfaces, materials, plumbing or electrical needs, and provider availability."
-            },
-            {
-                question: "Does Kavera perform tile or fixture work?",
-                answer:
-                    "No. Kavera is an independent provider-matching platform and does not perform tile, fixture, or kitchen remodeling work directly."
-            }
-        ]
+	        "backsplash-tile-fixtures": [
+	            {
+	                question: "What should I compare for backsplash and fixture updates?",
+	                answer:
+	                    "Compare tile material, pattern, grout, surface prep, faucet compatibility, hardware finish, lighting details, quote clarity, and timing."
+	            },
+	            {
+	                question: "Can backsplash and fixtures be a smaller project?",
+	                answer:
+	                    "Often yes, but scope depends on existing surfaces, materials, plumbing or electrical needs, and provider availability."
+	            },
+	            {
+	                question: "Does Kavera perform tile or fixture work?",
+	                answer:
+	                    "No. Kavera is an independent provider-matching platform and does not perform tile, fixture, or kitchen remodeling work directly."
+	            },
+	            {
+	                question: "What should I ask about surface prep and waterproofing?",
+	                answer:
+	                    "Ask how the wall is prepared, if any damaged drywall is replaced, what waterproofing or sealing is used where needed, and how they protect cabinets and countertops during installation."
+	            },
+	            {
+	                question: "Do fixture swaps require plumbing or electrical work?",
+	                answer:
+	                    "Sometimes. Ask which fixture changes require shutoffs, new valves, electrical updates, or permits, and who is responsible for each trade before work starts."
+	            }
+	        ]
     },
 
     servicePages: {
