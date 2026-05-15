@@ -1,0 +1,28 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" fill="#17191A"/>
+
+  <path
+    d="M32 20H48V56L84 20H106L63 64L108 108H85L48 74V108H32V20Z"
+    fill="none"
+    stroke="#FFF8EA"
+    stroke-width="7"
+    stroke-linejoin="miter"
+    stroke-linecap="square"
+  />
+
+  <path
+    d="M62 64L103 24"
+    stroke="#93AE72"
+    stroke-width="3"
+    stroke-linecap="square"
+    opacity="0.9"
+  />
+
+  <path
+    d="M64 66L104 104"
+    stroke="#F3C85B"
+    stroke-width="3"
+    stroke-linecap="square"
+    opacity="0.9"
+  />
+</svg>

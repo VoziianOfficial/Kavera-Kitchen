@@ -182,19 +182,17 @@
     const label = config.brand.logoLabel || `${config.companyName} home`;
 
     return `
-      <a class="brand-logo brand-logo--${escapeHtml(context)}" href="index.html" aria-label="${escapeAttr(label)}">
-        <svg class="brand-logo__mark" viewBox="0 0 52 52" aria-hidden="true" focusable="false">
-          <path class="brand-logo__main" d="M13 7V45" />
-          <path class="brand-logo__main" d="M16 26L39 7" />
-          <path class="brand-logo__main" d="M19 27L41 45" />
-          <path class="brand-logo__detail" d="M26 18H39" />
-          <path class="brand-logo__detail brand-logo__detail--warm" d="M24 34H38" />
-          <path class="brand-logo__accent" d="M34 11L40 7L38 15" />
-        </svg>
+    <a class="brand-logo brand-logo--${escapeHtml(context)}" href="index.html" aria-label="${escapeAttr(label)}">
+      <svg class="brand-logo__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <path
+          class="brand-logo__outline"
+          d="M14 8H24V29L46 8H58L34 32L59 56H47L24 36V56H14V8Z"
+        />
+      </svg>
 
-        <span class="brand-logo__text" data-company-name>${escapeHtml(config.brand.logoText || config.companyName)}</span>
-      </a>
-    `;
+      <span class="brand-logo__text" data-company-name>${escapeHtml(config.brand.logoText || config.companyName)}</span>
+    </a>
+  `;
   }
 
   function renderDropdownServices() {

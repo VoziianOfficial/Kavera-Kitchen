@@ -2349,3 +2349,54 @@ p {
         animation-iteration-count: 1 !important;
     }
 }
+
+.brand-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-width: max-content;
+    color: currentColor;
+}
+
+.brand-logo__mark {
+    width: 42px;
+    height: 42px;
+    overflow: visible;
+}
+
+.brand-logo__outline {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.8;
+    stroke-linejoin: miter;
+    stroke-linecap: square;
+    transition:
+        stroke var(--ease),
+        filter var(--ease),
+        transform var(--ease);
+}
+
+.brand-logo__text {
+    font-family: var(--font-heading);
+    font-size: 1.34rem;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    transition:
+        color var(--ease),
+        transform var(--ease);
+}
+
+.brand-logo:hover {
+    color: var(--color-butter);
+}
+
+.brand-logo:hover .brand-logo__outline {
+    stroke: var(--color-sage);
+    filter: drop-shadow(0 0 10px rgba(147, 174, 114, 0.32));
+    transform: translateY(-1px);
+}
+
+.brand-logo:hover .brand-logo__text {
+    color: var(--color-butter);
+    transform: translateX(1px);
+}

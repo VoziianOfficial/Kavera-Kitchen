@@ -13,6 +13,55 @@
     function initHomePage() {
         initMatchChoices();
         initScoreLines();
+        renderHomeServiceSplit();
+    }
+
+    function renderHomeServiceSplit() {
+        const mount = document.querySelector("[data-home-service-split]");
+        const config = window.SITE_CONFIG;
+
+        if (!mount || !config || !Array.isArray(config.services)) return;
+
+        mount.innerHTML = config.services
+            .map((service, index) => {
+                const isReverse = index % 2 !== 0;
+
+                return `
+        <article class="home-service-row ${isReverse ? "home-service-row--reverse" : ""}">
+          <div class="home-service-row__text">
+            <span class="home-service-row__number">${String(index + 1).padStart(2, "0")}</span>
+
+            <div>
+              <h3>${escapeHtml(service.title)}</h3>
+              <p>${escapeHtml(service.summary)}</p>
+
+              <a class="text-link" href="${escapeAttr(service.href)}">
+                View category
+              </a>
+            </div>
+          </div>
+
+          <a class="home-service-row__photo" href="${escapeAttr(service.href)}" aria-label="${escapeAttr(service.title)}">
+            <img src="${escapeAttr(service.image)}" alt="${escapeAttr(service.title)}" loading="lazy">
+            <span>${escapeHtml(service.shortTitle || service.title)}</span>
+          </a>
+        </article>
+      `;
+            })
+            .join("");
+    }
+
+    function escapeHtml(value) {
+        return String(value ?? "")
+            .replaceAll("&", "&amp;")
+            .replaceAll("<", "&lt;")
+            .replaceAll(">", "&gt;")
+            .replaceAll('"', "&quot;")
+            .replaceAll("'", "&#039;");
+    }
+
+    function escapeAttr(value) {
+        return escapeHtml(value);
     }
 
     function initMatchChoices() {
