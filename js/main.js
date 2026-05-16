@@ -437,9 +437,7 @@
     ).filter((element) => element.offsetParent !== null);
   }
 
-  /* ==========================================================
-     FOOTER
-  ========================================================== */
+  
 
   function renderFooter() {
     const mount = document.querySelector("[data-site-footer]");
@@ -530,9 +528,7 @@
     `;
   }
 
-  /* ==========================================================
-     CONFIG INJECTION
-  ========================================================== */
+  
 
   function injectDynamicContent() {
     setText("[data-company-name]", config.companyName);
@@ -627,9 +623,7 @@
     });
   }
 
-  /* ==========================================================
-     SECTION NAV
-  ========================================================== */
+  
 
   function renderSectionNav() {
     const mounts = document.querySelectorAll("[data-section-nav]");
@@ -713,9 +707,7 @@
     });
   }
 
-  /* ==========================================================
-     SERVICE PANELS / SELECTS
-  ========================================================== */
+  
 
   function renderServicePanels() {
     const mounts = document.querySelectorAll("[data-service-panels]");
@@ -767,9 +759,7 @@
     });
   }
 
-  /* ==========================================================
-     FAQ
-  ========================================================== */
+  
 
   function renderFaqBlocks() {
     const mounts = document.querySelectorAll("[data-faq-list]");
@@ -871,9 +861,7 @@
     return "general";
   }
 
-  /* ==========================================================
-     POLICY BANNER
-  ========================================================== */
+  
 
   function renderPolicyBanner() {
     const storageKey = config.cookieBanner.storageKey;
@@ -936,9 +924,7 @@
     });
   }
 
-  /* ==========================================================
-     SAFETY HELPERS
-  ========================================================== */
+  
 
   function preventEmptyLinks() {
     document.querySelectorAll('a[href="#"]').forEach((link) => {
@@ -959,9 +945,7 @@
     return escapeHtml(value);
   }
 
-  /* ==========================================================
-     SVG ICONS
-  ========================================================== */
+  
 
   function icon(name) {
     const icons = {
